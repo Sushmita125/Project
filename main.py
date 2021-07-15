@@ -130,6 +130,5 @@ def getAllData():
 
     #Return JSON
     return jsonify(Age=ages, Emotion=emotions, Gender=genders)
-
 if __name__=='__main__':
     app.run(debug=True)
