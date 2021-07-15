@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h3 class="mt-5">Video Streaming</h3>
+                <img src="{{ url_for('video_feed') }}" width="auto">
+            </div>
+            <div class="col-lg-4">
+                &nbsp;
+                <script src="{{ url_for('static', filename='js/script.js') }}">
+                </script>
+                <div id="genderresults">
+                </div>
+                <div id="ageresults">
+                </div>
+                <div id="emotionresults">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="results">
+        <script src="{{ url_for('static', filename='js/script.js') }}">
+        </script>
+    </div>
+    </body>
+</html>
