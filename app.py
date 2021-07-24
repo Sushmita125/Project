@@ -2,8 +2,8 @@ from flask import Flask, render_template, Response,jsonify
 from flask_cors import cross_origin
 import cv2
 import numpy as np
-from tensorflow.keras.preprocessing import image
-from tensorflow.keras.models import load_model
+from keras.preprocessing import image
+from keras.models import load_model
 
 #References :https://www.youtube.com/watch?v=mzX5oqd3pKA&t=524s
 #Reading all the models
